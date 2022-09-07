@@ -1,0 +1,70 @@
+<div class="feedback container">
+    <div class="feedback-box">
+        <div class="feedback-item">
+            <img src="img/feedback-1.jpg" alt="" >
+        </div>
+        <div class="feedback-item">
+            <img src="img/feedback-2.jpg" alt="" >
+        </div>
+        <div class="feedback-item">
+            <img src="img/feedback-3.jpg" alt="" >
+        </div>
+        <div class="feedback-item">
+            <img src="img/feedback-4.jpg" alt="" >
+        </div>
+        <div class="feedback-item">
+            <img src="img/feedback-5.jpg" alt="" >
+        </div>
+        <div class="feedback-item">
+            <img src="img/feedback-6.jpg" alt="" >
+        </div>
+        <button class="feedback-prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="feedback-next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</div>
+
+<style>
+    .feedback-box {
+        display: flex;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 432px;
+        position: relative;
+        /* z-index: 1; */
+        /* background-color: red; */
+    }
+    .feedback-item {
+        width: 432px;
+        padding: 15px;
+        
+    }
+    .feedback-item img {
+        border-radius: 20px;
+        width: 402px;
+        box-shadow: 0px 0px 2px 0px rgb(22, 161, 247);
+    }
+    .feedback-box button {
+        position: absolute;
+        /* width: 20px;
+        height: 60px; */
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 30px;
+        color: lightskyblue;
+        border: none;
+        background-color: transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 22222;
+    }
+    .feedback-box button:hover {
+        color: rgb(22, 161, 247);
+        text-shadow: 0 0 10px rgb(22, 161, 247);
+    }
+    .feedback-box .feedback-prev {
+        left: -0;
+    }
+    .feedback-box .feedback-next {
+        right: -0;
+    }
+</style>

@@ -1,0 +1,130 @@
+<div class="hd-top">
+    <div class="container d-flex justify-content-center">
+        <div class="hd-logo d-flex align-items-center">
+            <a href="#/!"><img class="w-100" src="../img/logo-png.png" alt=""></a>
+        </div>
+        <div class="hd-search d-flex align-items-center">
+            <input type="text" placeholder="Search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="hd-btn d-flex align-items-center">
+            <a class="hd-btn-sell" href="#!products" ng-click="goToSellProduct()">Sell Product</a>
+            <a class="hd-btn-free" href="#!products" ng-click="goToFreeProduct()"><img class="w-100" src="../img/button-free.png" alt=""></a>
+            <a class="hd-btn-donate" href=""><img class="w-100" src="../img/button.png" alt=""></a>
+        </div>
+        <div class="hd-links d-flex align-items-center">
+            <a class="hd-links-registry" href="#!registry" ng-show="!login">Registry</a>
+            <a class="hd-links-login" href="#!login" ng-show="!login">Login</a>
+            <a class="hd-links-user" href="" class="" ng-show="login">ME</a>
+            <a class="hd-links-cart" href=""><i class="fa-solid fa-cart-shopping"></i><span class="cart-product-count">12</span></a>
+        </div>
+    </div>
+</div>
+
+
+
+<style scoped>
+.hd-top {
+    border-bottom: 3px solid rgb(183, 176, 176);
+    height: 80px;
+}
+.hd-logo {
+    width: 70px;
+    margin-right: 100px;
+}
+.hd-logo:hover img {
+    transform: scale(1.1);
+}
+.hd-search {
+    position: relative;
+    margin-right: 50px;
+}
+.hd-search input {
+    padding-left: 20px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid slategray;
+}
+.hd-search button {
+    color: rgb(137, 196, 238);
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+.hd-search button:hover {
+    color: rgb(13, 122, 199);
+}
+.hd-btn {
+    margin-right: 50px;
+}
+.hd-btn .hd-btn-sell {
+    margin-right: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    line-height: 38px;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+
+}
+.hd-btn .hd-btn-sell:hover {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+}
+.hd-btn .hd-btn-free {
+    margin-right: 10px;
+    width: 80px;
+}
+.hd-btn .hd-btn-donate {
+    width: 80px;
+}
+.hd-btn .hd-btn-free:hover img,
+.hd-btn .hd-btn-donate:hover img {
+    transform: scale(1.3);
+}
+.hd-links-registry {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+.hd-links-login {
+    margin-left: 10px;
+}
+.hd-links-cart {
+    position: relative;
+    margin-left: 20px;
+    font-size: 24px;
+    color: rgb(28, 28, 28);
+}
+.hd-links-cart .cart-product-count {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    background-color: green;
+    border-radius: 50%;
+}
+.hd-links-cart:hover {
+    color: rgb(123, 117, 117);
+}
+.hd-links-user {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: aqua;
+}
+</style>

@@ -1,0 +1,38 @@
+<div class="category container">
+    <h2>Product Portfolio</h2>
+    <div class="row">
+        <div class="col-lg-3" ng-repeat="item in data.category">
+            <div class="category-item">
+                <a href="#!products" ng-click="categoryClick(item.id)">
+                    <div class="category-item__img">
+                        <img ng-src="{{item.imgUrl}}" alt="" class="w-100">
+                    </div>
+                    <div class="category-item__title text-center">{{item.title}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.category {
+    margin-top: 40px;
+}   
+.category-item {
+    margin-top: 40px;
+    margin-bottom: 20px;
+} 
+.category-item:hover img {
+    transform: scale(1.2);
+}
+.category-item__img {
+    box-shadow: 0 0 10px 0 rgb(109, 107, 107);
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.category-item__title {
+    margin-top: 20px;
+}
+</style>

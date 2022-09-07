@@ -1,0 +1,72 @@
+<div class="products-page container">
+    <div class="row">
+        <div class="col-lg-3 products-category">
+            <h2>Product categories</h2>
+            <ul class="">
+                <li ng-repeat="item in data.category" ng-click="categoryClick(item.id)">
+                    <a href="   ">{{item.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="products-item col-lg-4" ng-repeat="product in products">
+                    <a href="#!products/detail/{{product.title}}">
+                        <div class="products-item__img">
+                            <img ng-src="{{product.imgUrl}}" alt="" class="w-100">
+                        </div>
+                        <div class="products-item__info">
+                            <p class="fw-bold text-uppercase">{{product.title}}</p>
+                            <p>Price: $ {{product.price}}</p>
+                            <p>{{product.status}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style scoped>
+    .products-page {
+        margin-top: 40px;
+    }
+    .products-category ul {
+        padding: 0;
+    }
+    .products-category ul li {
+        cursor: pointer;
+        line-height: 48px;
+        padding-left: 20px;
+        border-bottom: 1px solid rgb(53, 176, 252);
+    }
+    .products-category ul li:hover {
+        background-color: lightskyblue;
+        font-weight: bold;
+        color: white;
+        
+    }
+    .products-item {
+        margin: 20px 0;
+        /* display: none; */
+    }
+    /* .row .products-item:first-child {
+        display: block;
+    } */
+    .products-item__img {
+        height: 250px;
+        width: 80%;
+        overflow: hidden;
+        margin: 0px auto;
+    }
+    .products-item__img:hover img {
+        transform: scale(1.1);
+    }
+    .products-item__info {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .products-item__info p {
+        margin: 0;
+    }
+</style>

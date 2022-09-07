@@ -1,0 +1,56 @@
+<div class="registry container ">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-2 d-flex align-items-center">
+            <img src="../../img/logo-png.png" alt="logo" class="w-100">
+        </div>
+        <div class="col-lg-4">
+            <form name="formRegistry" novalidate>
+                <h2 class="text-center">Wellcome</h2>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label ps-lg-2">Enter your full name</label>
+                  <input type="text" class="form-control" name="fullName" id="fullName" ng-model="fullName" required>
+                  <div class="sub-valid">
+                    <p>(*) Bạn cần nhập chính xác </p>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label ps-lg-2">Enter your email</label>
+                    <input type="email" class="form-control" name="email" id="email" ng-model="email" required>
+                    <div class="sub-valid">
+                        <p>(*) Bạn cần nhập chính xác </p>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label ps-lg-2">Enter your phone number</label>
+                    <input type="text" class="form-control" name="phone" id="phone" ng-model="phone" required>
+                    <div class="sub-valid">
+                        <p>(*) Bạn cần nhập chính xác </p>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="pass" class="form-label ps-lg-2">Password</label>
+                    <input type="password" class="form-control" name="pass" id="pass" ng-model="pass" required>
+                    <div class="sub-valid">
+                        <p>(*) Bạn cần nhập chính xác </p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPass" class="form-label ps-lg-2">Confirm password</label>
+                    <input type="password" class="form-control" name="comfirmPass" id="comfirmPass" ng-model="comfirmPass" required ng-focus="resetComfirmPass()">
+                    <div class="sub-valid">
+                        <p>(*) Bạn cần nhập chính xác </p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" ng-click="onSubmit(fullName, email, phone, pass, comfirmPass)">Sign up</button>
+                <input type="reset" class="btn btn-danger" value="Reset">
+                <!-- <button class="btn btn-success" ng-click="checkValid()">Check validate</button> -->
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .registry {
+        margin-top: 100px;
+    }
+</style>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/hstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <appSettings configSource="web.config" />
+</head>
+<body ng-app="h-app" ng-controller="h-ctrl">
+    <header>
+        <div ng-include="'components/header/header-top.htm'"></div>
+        <div ng-include="'components/header/header-nav.htm'"></div>
+    </header>
+    <div ng-view></div> 
+    <footer>
+        <div ng-include="'components/footer/footer.htm'"></div>
+    </footer>
+    <!-- <div ng-include="'components/main/registry.htm'"></div> -->
+    <!-- <div ng-include="'components/main/login.htm'"></div> -->
+    <script type="module" src="javascript/index.js"></script>
+    <!-- <script src="./javascript/detail.js"></script> -->
+</body>
+</html>

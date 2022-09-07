@@ -1,0 +1,41 @@
+<div class="hd-nav container">
+    <ul class="d-flex justify-content-center">
+        <li ng-repeat="item in data.category" ng-click="categoryClick(item.id)">
+            <a href="#!products">{{item.title}}</a>
+        </li>
+    </ul>
+</div>
+
+<style scoped>
+
+.hd-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.hd-nav ul li {
+    position: relative;
+}
+.hd-nav ul li:hover {
+    background-color: rgb(222, 222, 222);
+}
+.hd-nav ul li:hover ul {
+    display: block;
+}
+.hd-nav ul li a {
+    width: 100%;
+    padding: 0px 24px;
+    line-height: 60px;
+    text-align: center;
+}   
+.hd-nav ul li ul {
+    background-color: rgb(222, 222, 222);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+} 
+</style>
+
+<script>
+    
+</script>
